@@ -1,0 +1,12 @@
+
+
+version: '3'
+
+services:
+     suse-builder:
+        build: .
+        volumes:
+                - ./out:/out
+                - /usr/local/go/bin:/usr/local/go/bin
+
+        command: /bin/bash
